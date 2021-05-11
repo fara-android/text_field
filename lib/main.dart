@@ -65,7 +65,7 @@ class LoginForm extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(height: 16),
-                          buildText(0, "Email"),
+                          buildText( "Email"),
                           SizedBox(height: 16),
                           Container(
                             height: 56,
@@ -89,7 +89,7 @@ class LoginForm extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              buildText(0, "Password"),
+                              buildText( "Password"),
                               Container(
                                 child: Text(
                                   "Forgot password?",
@@ -156,7 +156,7 @@ class LoginForm extends StatelessWidget {
   }
 
 
-  Widget buildText(double paddingTop, String text) {
+  Widget buildText(String text) {
     return Text(
       text,
       style: TextStyle(
